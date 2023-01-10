@@ -4,7 +4,6 @@ import Foundation
 
 @main
 struct TwilioLambda: SimpleLambdaHandler {
-  // In this example we are receiving and responding with `Codable`.
   func handle(_ request: APIGatewayV2Request, context: LambdaContext) async throws -> APIGatewayV2Response {
     
     context.logger.info("In the lambda - beginning request -- Body: \(request.body ?? "No body found.")")
